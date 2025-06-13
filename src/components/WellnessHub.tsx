@@ -1,4 +1,3 @@
-
 import { useState } from 'react';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
@@ -8,8 +7,8 @@ import { Progress } from '@/components/ui/progress';
 import { Switch } from '@/components/ui/switch';
 import { 
   Heart, 
-  Sleep, 
-  Water,
+  Moon, 
+  Droplets,
   Clock,
   Star,
   Play,
@@ -23,8 +22,8 @@ export const WellnessHub = ({ user }) => {
   const [currentSession, setCurrentSession] = useState(null);
 
   const todayHabits = [
-    { name: 'Drink 8 glasses of water', completed: 6, total: 8, icon: Water },
-    { name: 'Get 8 hours of sleep', completed: 7.5, total: 8, icon: Sleep },
+    { name: 'Drink 8 glasses of water', completed: 6, total: 8, icon: Droplets },
+    { name: 'Get 8 hours of sleep', completed: 7.5, total: 8, icon: Moon },
     { name: 'Meditate for 10 minutes', completed: 1, total: 1, icon: Heart },
     { name: 'Take vitamins', completed: 1, total: 1, icon: Star }
   ];
@@ -260,7 +259,7 @@ export const WellnessHub = ({ user }) => {
           <Card>
             <CardHeader>
               <CardTitle className="flex items-center space-x-2">
-                <Sleep className="w-5 h-5 text-wellness-lavender" />
+                <Moon className="w-5 h-5 text-wellness-lavender" />
                 <span>Last Night's Sleep</span>
               </CardTitle>
             </CardHeader>
@@ -324,7 +323,7 @@ export const WellnessHub = ({ user }) => {
           <Card>
             <CardHeader>
               <CardTitle className="flex items-center space-x-2">
-                <Water className="w-5 h-5 text-wellness-mint" />
+                <Droplets className="w-5 h-5 text-wellness-mint" />
                 <span>Water Intake</span>
               </CardTitle>
             </CardHeader>
@@ -347,7 +346,7 @@ export const WellnessHub = ({ user }) => {
                         : 'bg-gray-100 text-gray-400'
                     }`}
                   >
-                    <Water className="w-6 h-6" />
+                    <Droplets className="w-6 h-6" />
                   </div>
                 ))}
               </div>

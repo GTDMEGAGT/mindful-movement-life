@@ -6,7 +6,7 @@ import {
   Activity, 
   Heart, 
   Calendar, 
-  Water,
+  Droplets,
   Clock,
   Star,
   Settings,
@@ -29,7 +29,7 @@ export const Dashboard = ({ user }) => {
     { label: 'Start Workout', icon: Activity, color: 'bg-wellness-sage' },
     { label: 'Log Meal', icon: Calendar, color: 'bg-wellness-ocean' },
     { label: 'Meditation', icon: Heart, color: 'bg-wellness-lavender' },
-    { label: 'Add Water', icon: Water, color: 'bg-wellness-mint' }
+    { label: 'Add Water', icon: Droplets, color: 'bg-wellness-mint' }
   ];
 
   return (
@@ -106,7 +106,7 @@ export const Dashboard = ({ user }) => {
         <CardContent className="space-y-4">
           <div className="flex justify-between items-center">
             <div className="flex items-center space-x-3">
-              <Water className="w-5 h-5 text-wellness-mint" />
+              <Droplets className="w-5 h-5 text-wellness-mint" />
               <span className="text-sm font-medium">Water Intake</span>
             </div>
             <div className="flex items-center space-x-2">
