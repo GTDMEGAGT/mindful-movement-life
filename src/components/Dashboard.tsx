@@ -110,7 +110,7 @@ export const Dashboard = ({ user }) => {
               <span className="text-sm font-medium">Water Intake</span>
             </div>
             <div className="flex items-center space-x-2">
-              <span className="text-sm text-gray-600">{today...water}/{todayStats.waterGoal} glasses</span>
+              <span className="text-sm text-gray-600">{todayStats.water}/{todayStats.waterGoal} glasses</span>
               <Progress value={(todayStats.water / todayStats.waterGoal) * 100} className="w-16 h-2" />
             </div>
           </div>
