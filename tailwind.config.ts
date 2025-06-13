@@ -66,21 +66,22 @@ export default {
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
 				},
-				// Enhanced wellness color palette
+				// Enhanced blue and white color palette
 				wellness: {
-					sage: '#87A96B',
-					mint: '#A4D4AE',
-					ocean: '#5B9BD5',
-					lavender: '#B19CD9',
-					sand: '#F5E6D3',
-					coral: '#FF8A80',
-					// Additional calming colors
-					'sage-light': '#9BB377',
-					'mint-light': '#B6E0C0',
-					'ocean-light': '#7BAEE1',
-					'sage-dark': '#6B8F4F',
-					'mint-dark': '#8BC89C',
-					'ocean-dark': '#4A8BC2'
+					blue: '#5B9BD5',
+					'blue-light': '#7BAEE1',
+					'blue-dark': '#4A8BC2',
+					white: '#ffffff',
+					'blue-50': '#EBF4FF',
+					'blue-100': '#DBEAFE',
+					'blue-200': '#BFDBFE',
+					'blue-300': '#93C5FD',
+					'blue-400': '#60A5FA',
+					'blue-500': '#3B82F6',
+					'blue-600': '#2563EB',
+					'blue-700': '#1D4ED8',
+					'blue-800': '#1E40AF',
+					'blue-900': '#1E3A8A'
 				}
 			},
 			borderRadius: {
@@ -150,9 +151,9 @@ export default {
 				'bounce-gentle': 'bounce-gentle 2s infinite'
 			},
 			backgroundImage: {
-				'gradient-wellness': 'linear-gradient(135deg, #87A96B 0%, #A4D4AE 50%, #5B9BD5 100%)',
-				'gradient-ocean': 'linear-gradient(135deg, #5B9BD5 0%, #B19CD9 100%)',
-				'gradient-sage': 'linear-gradient(135deg, #87A96B 0%, #A4D4AE 100%)'
+				'gradient-wellness': 'linear-gradient(135deg, #5B9BD5 0%, #ffffff 50%, #5B9BD5 100%)',
+				'gradient-ocean': 'linear-gradient(135deg, #5B9BD5 0%, #ffffff 100%)',
+				'gradient-sage': 'linear-gradient(135deg, #5B9BD5 0%, #ffffff 100%)'
 			},
 			screens: {
 				'xs': '475px',

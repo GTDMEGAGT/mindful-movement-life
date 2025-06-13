@@ -66,7 +66,7 @@ const Index = () => {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-wellness-mint/20 via-wellness-sage/10 to-wellness-ocean/20">
+    <div className="min-h-screen bg-gradient-to-br from-wellness-blue-50 via-white to-wellness-blue-100">
       <div className="w-full max-w-md mx-auto bg-background min-h-screen relative shadow-lg">
         <main className="pb-20 px-safe">
           {renderCurrentView()}

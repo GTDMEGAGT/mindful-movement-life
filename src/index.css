@@ -124,15 +124,15 @@
   }
   
   .wellness-gradient {
-    background: linear-gradient(135deg, #87A96B 0%, #A4D4AE 50%, #5B9BD5 100%);
+    background: linear-gradient(135deg, #5B9BD5 0%, #ffffff 50%, #5B9BD5 100%);
   }
   
   .ocean-gradient {
-    background: linear-gradient(135deg, #5B9BD5 0%, #B19CD9 100%);
+    background: linear-gradient(135deg, #5B9BD5 0%, #ffffff 100%);
   }
   
   .sage-gradient {
-    background: linear-gradient(135deg, #87A96B 0%, #A4D4AE 100%);
+    background: linear-gradient(135deg, #5B9BD5 0%, #ffffff 100%);
   }
 
   .card-hover {
