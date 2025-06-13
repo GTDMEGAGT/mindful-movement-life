@@ -103,7 +103,10 @@ export const CommunityFeed = ({ user }) => {
         content: newPost,
         timestamp: 'Just now',
         likes: 0,
-        comments: 0
+        comments: 0,
+        achievement: undefined,
+        stats: undefined,
+        image: undefined
       };
       setPosts([post, ...posts]);
       setNewPost('');

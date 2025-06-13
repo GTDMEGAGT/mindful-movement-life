@@ -1,4 +1,3 @@
-
 import { useState } from 'react';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
@@ -288,9 +287,7 @@ export const UserProfile = ({ user, setUser }) => {
               </div>
               <div className="flex items-center justify-between">
                 <span className="text-sm">Meal reminders</span>
-                <Switch default
-
-Checked />
+                <Switch defaultChecked />
               </div>
               <div className="flex items-center justify-between">
                 <span className="text-sm">Water reminders</span>
