@@ -13,7 +13,10 @@ export default {
 	theme: {
 		container: {
 			center: true,
-			padding: '2rem',
+			padding: {
+				DEFAULT: '1rem',
+				sm: '2rem',
+			},
 			screens: {
 				'2xl': '1400px'
 			}
@@ -63,20 +66,33 @@ export default {
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
 				},
-				// Wellness color palette
+				// Enhanced wellness color palette
 				wellness: {
 					sage: '#87A96B',
 					mint: '#A4D4AE',
 					ocean: '#5B9BD5',
 					lavender: '#B19CD9',
 					sand: '#F5E6D3',
-					coral: '#FF8A80'
+					coral: '#FF8A80',
+					// Additional calming colors
+					'sage-light': '#9BB377',
+					'mint-light': '#B6E0C0',
+					'ocean-light': '#7BAEE1',
+					'sage-dark': '#6B8F4F',
+					'mint-dark': '#8BC89C',
+					'ocean-dark': '#4A8BC2'
 				}
 			},
 			borderRadius: {
 				lg: 'var(--radius)',
 				md: 'calc(var(--radius) - 2px)',
 				sm: 'calc(var(--radius) - 4px)'
+			},
+			spacing: {
+				'safe': 'env(safe-area-inset-bottom)',
+				'safe-top': 'env(safe-area-inset-top)',
+				'safe-left': 'env(safe-area-inset-left)',
+				'safe-right': 'env(safe-area-inset-right)',
 			},
 			keyframes: {
 				'accordion-down': {
@@ -114,18 +130,34 @@ export default {
 						opacity: '1',
 						transform: 'translateY(0)'
 					}
+				},
+				'bounce-gentle': {
+					'0%, 100%': {
+						transform: 'translateY(0)',
+						animationTimingFunction: 'cubic-bezier(0.8,0,1,1)'
+					},
+					'50%': {
+						transform: 'translateY(-5px)',
+						animationTimingFunction: 'cubic-bezier(0,0,0.2,1)'
+					}
 				}
 			},
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
 				'accordion-up': 'accordion-up 0.2s ease-out',
 				'fade-in': 'fade-in 0.3s ease-out',
-				'slide-up': 'slide-up 0.4s ease-out'
+				'slide-up': 'slide-up 0.4s ease-out',
+				'bounce-gentle': 'bounce-gentle 2s infinite'
 			},
 			backgroundImage: {
 				'gradient-wellness': 'linear-gradient(135deg, #87A96B 0%, #A4D4AE 50%, #5B9BD5 100%)',
 				'gradient-ocean': 'linear-gradient(135deg, #5B9BD5 0%, #B19CD9 100%)',
 				'gradient-sage': 'linear-gradient(135deg, #87A96B 0%, #A4D4AE 100%)'
+			},
+			screens: {
+				'xs': '475px',
+				'tall': { 'raw': '(min-height: 800px)' },
+				'short': { 'raw': '(max-height: 600px)' }
 			}
 		}
 	},
