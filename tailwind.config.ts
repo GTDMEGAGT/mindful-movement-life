@@ -1,3 +1,4 @@
+
 import type { Config } from "tailwindcss";
 
 export default {
@@ -61,6 +62,15 @@ export default {
 					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
+				},
+				// Wellness color palette
+				wellness: {
+					sage: '#87A96B',
+					mint: '#A4D4AE',
+					ocean: '#5B9BD5',
+					lavender: '#B19CD9',
+					sand: '#F5E6D3',
+					coral: '#FF8A80'
 				}
 			},
 			borderRadius: {
@@ -84,11 +94,38 @@ export default {
 					to: {
 						height: '0'
 					}
+				},
+				'fade-in': {
+					'0%': {
+						opacity: '0',
+						transform: 'translateY(10px)'
+					},
+					'100%': {
+						opacity: '1',
+						transform: 'translateY(0)'
+					}
+				},
+				'slide-up': {
+					'0%': {
+						opacity: '0',
+						transform: 'translateY(20px)'
+					},
+					'100%': {
+						opacity: '1',
+						transform: 'translateY(0)'
+					}
 				}
 			},
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
-				'accordion-up': 'accordion-up 0.2s ease-out'
+				'accordion-up': 'accordion-up 0.2s ease-out',
+				'fade-in': 'fade-in 0.3s ease-out',
+				'slide-up': 'slide-up 0.4s ease-out'
+			},
+			backgroundImage: {
+				'gradient-wellness': 'linear-gradient(135deg, #87A96B 0%, #A4D4AE 50%, #5B9BD5 100%)',
+				'gradient-ocean': 'linear-gradient(135deg, #5B9BD5 0%, #B19CD9 100%)',
+				'gradient-sage': 'linear-gradient(135deg, #87A96B 0%, #A4D4AE 100%)'
 			}
 		}
 	},
