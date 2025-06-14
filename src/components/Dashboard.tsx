@@ -130,23 +130,24 @@ export const Dashboard = ({ user }) => {
 
       {/* Quick Actions */}
       <div>
-        <h2 className="text-lg font-semibold mb-4">Quick Actions</h2>
-        <div className="grid grid-cols-2 gap-3">
-          {quickActions.map((action, index) => {
-            const Icon = action.icon;
-            return (
-              <Button
-                key={index}
-                variant="outline"
-                className={`h-16 flex flex-col items-center space-y-2 ${action.color} text-white border-none hover:opacity-90 transition-all duration-200 hover:scale-105`}
-              >
-                <Icon className="w-5 h-5" />
-                <span className="text-xs font-medium">{action.label}</span>
-              </Button>
-            );
-          })}
-        </div>
-      </div>
+  <h2 className="text-lg font-semibold mb-4">Quick Actions</h2>
+  <div className="grid grid-cols-2 gap-3">
+    {quickActions.map((action, index) => {
+      const Icon = action.icon;
+      return (
+        <Button
+          key={index}
+          variant="outline"
+          className={`h-16 flex flex-col items-center justify-center space-y-2 bg-gray-50 ${action.color} text-gray-800 hover:scale-105 transition-all duration-200`}
+        >
+          <Icon className="w-5 h-5 text-current" />
+          <span className="text-xs font-medium">{action.label}</span>
+        </Button>
+      );
+    })}
+  </div>
+</div>
+
 
       {/* Upcoming */}
       <Card className="card-hover">

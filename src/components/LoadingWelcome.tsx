@@ -35,11 +35,11 @@ export const LoadingWelcome = ({ onComplete }: { onComplete: () => void }) => {
     <div className="fixed inset-0 z-50 flex items-center justify-center bg-gradient-wellness">
       <div className="text-center space-y-8 px-4">
         <div className="animate-pulse">
-          <CurrentIcon className="w-16 h-16 mx-auto text-white mb-4" />
+          <CurrentIcon className="w-16 h-16 mx-auto text-blue mb-4" />
         </div>
         
         <div className="space-y-4">
-          <h1 className="text-2xl md:text-3xl font-bold text-white animate-fade-in">
+          <h1 className="text-2xl md:text-3xl font-bold text-blue animate-fade-in">
             {steps[currentStep].text}
           </h1>
           
@@ -48,14 +48,14 @@ export const LoadingWelcome = ({ onComplete }: { onComplete: () => void }) => {
               <div
                 key={index}
                 className={`w-2 h-2 rounded-full transition-all duration-300 ${
-                  index <= currentStep ? 'bg-white' : 'bg-white/30'
+                  index <= currentStep ? 'bg-blue' : 'bg-blue/30'
                 }`}
               />
             ))}
           </div>
         </div>
 
-        <Loader2 className="w-8 h-8 mx-auto text-white animate-spin" />
+        <Loader2 className="w-8 h-8 mx-auto text-blue animate-spin" />
       </div>
     </div>
   );
